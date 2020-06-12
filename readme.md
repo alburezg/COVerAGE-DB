@@ -1,10 +1,9 @@
 Script to automate data collecation for COVerAGE-DB
 
-## Pending
+Run script R\A_get_data\00_retrieve_data.R from Hydra ad infinitum. 
+It tries to update the files every 12 hours and it the conditions are not right, it goes to sleep and reactivates in anoter 12 hours.
 
-Create script that automatically runs code without needing to run manually.
-
-# Scripts
+# Instructions
 
 NY toca correrlo diario, es un GitHub que actualizan cada dia a la 1pm de NYC (7 de acá).  
 Estonia, como es la base total, con una vez que lo corras a la semana es suficiente. 
