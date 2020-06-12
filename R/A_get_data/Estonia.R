@@ -1,7 +1,4 @@
-rm(list=ls())
-library(tidyverse)
-library(lubridate)
-library(googlesheets4)
+# rm(list=ls())
 
 country <- "estonia"
 path_out <- paste0("../../Data/",country,"/")
@@ -91,6 +88,7 @@ db_estonia <- db_all %>%
 ############################################
 #### uploading database to Google Drive ####
 ############################################
+
 # This command replace the whole sheet
 write_sheet(db_estonia, 
             ss = "https://docs.google.com/spreadsheets/d/1Jp2ffKZBYzraR5qb0eDcaz9jx-90vRwZqZBHn8tp-ak/edit#gid=1548224005",

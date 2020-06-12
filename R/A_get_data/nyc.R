@@ -1,8 +1,3 @@
-rm(list=ls())
-library(tidyverse)
-library(lubridate)
-library(googlesheets4)
-library(googledrive)
 
 country <- "nyc"
 path_out <- paste0("../../Data/",country,"/")
@@ -88,7 +83,7 @@ to_drive <- function(x = db_age, file_type = "_cases&deaths_age.csv"){
  filename <- paste0("USA_NYC", date, file_type)
   write_csv(x, paste0(path_out, "temp_nyc.csv"))
   drive_upload(
-    "temp_nyc.csv",
+    paste0(path_out, "temp_nyc.csv"),
     path = "https://drive.google.com/drive/folders/10BtgHUcPLXOeUrxBfzyEYEIL9TeZ4qzY?usp=sharing",
     name = filename,
     overwrite = T)
@@ -100,6 +95,6 @@ to_drive(db_sum, "_cases&deaths_summary.csv")
 to_drive(db_tests, "_tests.csv")
 to_drive(db_tested, "_tested.csv")
 
-file.remove("temp_nyc.csv")
+file.remove(paste0(path_out, "temp_nyc.csv"))
 
 print(paste(country, "data saved!", Sys.Date()))
