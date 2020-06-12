@@ -1,6 +1,13 @@
 Script to automate data collecation for COVerAGE-DB
 
+## Pending
+
+Create script that automatically runs code without needing to run manually.
+
 # Scripts
+
+NY toca correrlo diario, es un GitHub que actualizan cada dia a la 1pm de NYC (7 de acá).  
+Estonia, como es la base total, con una vez que lo corras a la semana es suficiente. 
 
 ## Sweden
 https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige
