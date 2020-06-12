@@ -17,11 +17,13 @@ url <- "https://www.arcgis.com/sharing/rest/content/items/b5e7488e117749c19881cc
 httr::GET(url, write_disk(tf <- tempfile(fileext = ".xlsx")))
 tf
 
-db_sex <- read_xlsx(tf, sheet = "Totalt antal per k?n")
-db_age <- read_xlsx(tf, sheet = "Totalt antal per ?ldersgrupp")
+db_sex <- read_xlsx(tf)
+
+db_sex <- read_xlsx(tf, sheet = "Totalt antal per kön")
+db_age <- read_xlsx(tf, sheet = "Totalt antal per åldersgrupp")
 
 db_s2 <- db_sex %>% 
-  rename(Sex = K?n,
+  rename(Sex = Kön,
          Cases = Totalt_antal_fall,
          Deaths = Totalt_antal_avlidna) %>% 
   mutate(Sex = case_when(Sex == "Man" ~ "m",
@@ -33,7 +35,7 @@ db_s2 <- db_sex %>%
 db_a2 <- db_age %>% 
   rename(Cases = Totalt_antal_fall,
          Deaths = Totalt_antal_avlidna) %>% 
-  mutate(Age = str_sub(?ldersgrupp, 7, 8),
+  mutate(Age = str_sub(Åldersgrupp, 7, 8),
          Age = case_when(Age == "0_" ~ "0",
                          Age == "t " ~ "UNK",
                          TRUE ~ Age),

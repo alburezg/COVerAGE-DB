@@ -24,10 +24,12 @@ while(T){
   print("NYC: Run evey day 11.00 GMT")
   print("Estonia: Run every Friday at 13.00 GMT")    
   
+  d <- now(tzone = "GMT")
+  
   # Make sure that it is after 13.00 GMT
-  if(hour(now(tzone = "GMT")) >= time_to_start){
+  if(hour(d) >= time_to_start){
     
-    print(paste0("Starting data retrieval for Sweden...", d))
+    print(paste0("Starting data retrieval for Sweden..."))
     source("sweden.R")
     
     print(paste0("Starting data retrieval for NYC..."))
