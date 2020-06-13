@@ -23,6 +23,7 @@ db_sex <- read_xlsx(tf, sheet = "Totalt antal per kön")
 db_age <- read_xlsx(tf, sheet = "Totalt antal per åldersgrupp")
 
 db_s2 <- db_sex %>% 
+  # rename(Sex = Kön,
   rename(Sex = Kön,
          Cases = Totalt_antal_fall,
          Deaths = Totalt_antal_avlidna) %>% 
@@ -34,8 +35,11 @@ db_s2 <- db_sex %>%
 
 db_a2 <- db_age %>% 
   rename(Cases = Totalt_antal_fall,
-         Deaths = Totalt_antal_avlidna) %>% 
-  mutate(Age = str_sub(Åldersgrupp, 7, 8),
+         Deaths = Totalt_antal_avlidna
+         , Age = ends_with("ldersgrupp")
+         ) %>% 
+  # mutate(Age = str_sub(Åldersgrupp, 7, 8),
+  mutate(Age = str_sub(Age, 7, 8),
          Age = case_when(Age == "0_" ~ "0",
                          Age == "t " ~ "UNK",
                          TRUE ~ Age),
@@ -48,7 +52,7 @@ db_all <- bind_rows(db_s2, db_a2) %>%
          Region = "All",
          Code = paste0("SE", date),
          Date = date,
-         AgeInt = case_when(Age == "TOT" | Age == "TOT" ~ "",
+         AgeInt = case_when(Age == "TOT" | Age == "UNK" ~ "",
                             TRUE ~ "10"),
          Metric = "Count") %>% 
   select(Country, Region, Code, Date, Sex, Age, AgeInt, Metric, Measure, Value) 

@@ -14,7 +14,7 @@ db2 <- db %>%
          Sex = case_when(Sex == 'N' ~ 'f',
                          Sex == 'M' ~ 'm',
                          TRUE ~ 'UNK'),
-         Age = ifelse(Age == "?le 85", "85", Age),
+         Age = ifelse(Age == "üle 85", "85", Age),
          Age = replace_na(Age, "UNK")) %>% 
   group_by(date, Age, Sex) %>% 
   summarise(Cases = sum(Case),

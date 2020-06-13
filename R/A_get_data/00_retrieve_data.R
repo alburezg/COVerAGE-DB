@@ -30,14 +30,17 @@ while(T){
   if(hour(d) >= time_to_start){
     
     print(paste0("Starting data retrieval for Sweden..."))
-    source("sweden.R")
+    # source("sweden.R")
+    eval(parse("sweden.R", encoding = 'UTF-8'))
     
     print(paste0("Starting data retrieval for NYC..."))
-    source("nyc.R")
+    # source("nyc.R")
+    eval(parse("nyc.R", encoding = 'UTF-8'))
     
     if(weekdays(now(tzone = "GMT")) == "Friday"){
       print(paste0("Starting data retrieval for Estonia..."))
-      source("estonia.R")
+      # source("estonia.R")
+      eval(parse("estonia.R", encoding = 'UTF-8'))
     }
     
     print(paste0("SUCESS! All estimates saved for day", d, "!!"))
