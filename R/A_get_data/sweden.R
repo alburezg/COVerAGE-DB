@@ -23,8 +23,8 @@ db_sex <- read_xlsx(tf, sheet = "Totalt antal per kön")
 db_age <- read_xlsx(tf, sheet = "Totalt antal per åldersgrupp")
 
 db_s2 <- db_sex %>% 
+  rename(Sex = starts_with("K"),
   # rename(Sex = Kön,
-  rename(Sex = Kön,
          Cases = Totalt_antal_fall,
          Deaths = Totalt_antal_avlidna) %>% 
   mutate(Sex = case_when(Sex == "Man" ~ "m",
