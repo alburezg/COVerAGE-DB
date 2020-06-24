@@ -31,3 +31,17 @@
 [1] "nyc data saved! 2020-06-14"
 [1] "SUCESS! All estimates saved for day2020-06-14 18:00:22!!"
 [1] "Sleeping for 12 h..."
+[1] "~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~"
+[1] "New data retrieval started for Sweden, Estonia, NYC 2020-06-15 13:28:56"
+[1] "Rules are as follows:"
+[1] "Sweden: Retrieve every day at 13.00 GMT"
+[1] "NYC: Run evey day 11.00 GMT"
+[1] "Estonia: Run every Friday at 13.00 GMT"
+[1] "Starting data retrieval for Sweden..."
+The googlesheets4 package is requesting access to your Google account. Select a pre-authorised account or enter '0' to obtain a new token. Press Esc/Ctrl + C to abort.
+
+1: gatemonte@gmail.com
+
+Enter an item from the menu, or 0 to exit
+Enter an item from the menu, or 0 to exit
+Enter an item from the menu, or 0 to exit
