@@ -1,0 +1,10 @@
+library(tidyverse)
+library(lubridate)
+library(googlesheets4)
+library(googledrive)
+library(readxl)
+library(httr)
+
+sink("nyc_output.txt", append = T)
+eval(parse("nyc.R", encoding = 'UTF-8'))
+sink()

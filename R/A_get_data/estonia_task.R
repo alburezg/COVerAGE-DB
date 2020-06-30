@@ -1,0 +1,10 @@
+library(tidyverse)
+library(lubridate)
+library(googlesheets4)
+library(googledrive)
+library(readxl)
+library(httr)
+
+sink("estonia_output.txt", append = T)
+eval(parse("estonia.R", encoding = 'UTF-8'))
+sink()

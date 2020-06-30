@@ -1,4 +1,11 @@
 
+print(paste0("Starting data retrieval for NYC..."))
+
+# Drive credentials
+drive_auth(email = "gatemonte@gmail.com")
+gs4_auth(email = "gatemonte@gmail.com")
+
+
 country <- "nyc"
 path_out <- paste0("../../Data/",country,"/")
 

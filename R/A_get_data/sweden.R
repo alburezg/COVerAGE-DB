@@ -1,3 +1,9 @@
+# Drive credentials
+drive_auth(email = "gatemonte@gmail.com")
+gs4_auth(email = "gatemonte@gmail.com")
+
+print(paste0("Starting data retrieval for Sweden..."))
+
 ############################
 # When using it daily
 ############################
