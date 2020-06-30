@@ -5,7 +5,7 @@ drive_auth(email = "gatemonte@gmail.com")
 gs4_auth(email = "gatemonte@gmail.com")
 
 country <- "estonia"
-path_out <- paste0("../../Data/",country,"/")
+path_out <- paste0("U:/Projects/COVerAGE-DB/Data/",country,"/")
 
 db <- read_csv("https://opendata.digilugu.ee/opendata_covid19_test_results.csv")
 

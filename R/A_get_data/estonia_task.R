@@ -5,6 +5,9 @@ library(googledrive)
 library(readxl)
 library(httr)
 
-sink("estonia_output.txt", append = T)
-eval(parse("estonia.R", encoding = 'UTF-8'))
-sink()
+# path <- getwd()
+path <- "U:/Projects/COVerAGE-DB/R/A_get_data"
+
+# sink("estonia_output.txt", append = T)
+eval(parse(paste0(path, "/estonia.R"), encoding = 'UTF-8'))
+# sink()

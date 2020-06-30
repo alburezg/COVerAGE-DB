@@ -1,0 +1,322 @@
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.2.1     v purrr   0.3.3
+v tibble  2.1.3     v dplyr   0.8.3
+v tidyr   1.0.0     v stringr 1.4.0
+v readr   1.3.1     v forcats 0.4.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+Warnmeldung:
+Paket 'tidyverse' wurde unter R Version 3.6.3 erstellt 
+
+Attache Paket: 'lubridate'
+
+The following object is masked from 'package:base':
+
+    date
+
+Warnmeldung:
+Paket 'googlesheets4' wurde unter R Version 3.6.3 erstellt 
+
+Attache Paket: 'googledrive'
+
+The following objects are masked from 'package:googlesheets4':
+
+    request_generate, request_make
+
+Warnmeldung:
+Paket 'googledrive' wurde unter R Version 3.6.3 erstellt 
+Fehler in paste0(path, "/nyc.R") : Objekt 'path' nicht gefunden
+Ruft auf: eval -> parse -> paste0
+Ausführung angehalten
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.2.1     v purrr   0.3.3
+v tibble  2.1.3     v dplyr   0.8.3
+v tidyr   1.0.0     v stringr 1.4.0
+v readr   1.3.1     v forcats 0.4.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+Warnmeldung:
+Paket 'tidyverse' wurde unter R Version 3.6.3 erstellt 
+
+Attache Paket: 'lubridate'
+
+The following object is masked from 'package:base':
+
+    date
+
+Warnmeldung:
+Paket 'googlesheets4' wurde unter R Version 3.6.3 erstellt 
+
+Attache Paket: 'googledrive'
+
+The following objects are masked from 'package:googlesheets4':
+
+    request_generate, request_make
+
+Warnmeldung:
+Paket 'googledrive' wurde unter R Version 3.6.3 erstellt 
+Fehler in file(filename, "r") : kann Verbindung nicht öffnen
+Ruft auf: eval -> parse -> file
+Zusätzlich: Warnmeldung:
+In file(filename, "r") :
+  kann Datei 'C:/Windows/system32/nyc.R' nicht öffnen: No such file or directory
+Ausführung angehalten
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.2.1     v purrr   0.3.3
+v tibble  2.1.3     v dplyr   0.8.3
+v tidyr   1.0.0     v stringr 1.4.0
+v readr   1.3.1     v forcats 0.4.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+Warnmeldung:
+Paket 'tidyverse' wurde unter R Version 3.6.3 erstellt 
+
+Attache Paket: 'lubridate'
+
+The following object is masked from 'package:base':
+
+    date
+
+Warnmeldung:
+Paket 'googlesheets4' wurde unter R Version 3.6.3 erstellt 
+
+Attache Paket: 'googledrive'
+
+The following objects are masked from 'package:googlesheets4':
+
+    request_generate, request_make
+
+Warnmeldung:
+Paket 'googledrive' wurde unter R Version 3.6.3 erstellt 
+[1] "Starting data retrieval for NYC..."
+Parsed with column specification:
+cols(
+  AGE_GROUP = col_character(),
+  CASE_RATE = col_double(),
+  HOSPITALIZED_RATE = col_double(),
+  DEATH_RATE = col_double(),
+  CASE_COUNT = col_double(),
+  HOSPITALIZED_COUNT = col_double(),
+  DEATH_COUNT = col_double()
+)
+Parsed with column specification:
+cols(
+  SEX_GROUP = col_character(),
+  CASE_RATE = col_double(),
+  HOSPITALIZED_RATE = col_double(),
+  DEATH_RATE = col_double(),
+  CASE_COUNT = col_double(),
+  HOSPITALIZED_COUNT = col_double(),
+  DEATH_COUNT = col_double()
+)
+Parsed with column specification:
+cols(
+  X1 = col_character(),
+  X2 = col_character()
+)
+Parsed with column specification:
+cols(
+  DATE = col_character(),
+  TOTAL_TESTS = col_double(),
+  POSITIVE_TESTS = col_double(),
+  PERCENT_POSITIVE = col_double(),
+  PERCENT_POSITIVE_3DAYS_AGG = col_double()
+)
+Parsed with column specification:
+cols(
+  modzcta = col_double(),
+  Positive = col_double(),
+  Total = col_double(),
+  modzcta_cum_perc_pos = col_double()
+)
+Auto-refreshing stale OAuth token.
+Writing to "NYC input template"
+Appending 19 row(s) to "database"
+Fehler in open.connection(path, "wb") : kann Verbindung nicht öffnen
+Ruft auf: eval ... write_delim -> stream_delim -> open -> open.connection
+Zusätzlich: Warnmeldung:
+In open.connection(path, "wb") :
+  kann Datei '../../Data/nyc/temp_nyc.csv' nicht öffnen: No such file or directory
+Ausführung angehalten
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.2.1     v purrr   0.3.3
+v tibble  2.1.3     v dplyr   0.8.3
+v tidyr   1.0.0     v stringr 1.4.0
+v readr   1.3.1     v forcats 0.4.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+Warnmeldung:
+Paket 'tidyverse' wurde unter R Version 3.6.3 erstellt 
+
+Attache Paket: 'lubridate'
+
+The following object is masked from 'package:base':
+
+    date
+
+Warnmeldung:
+Paket 'googlesheets4' wurde unter R Version 3.6.3 erstellt 
+
+Attache Paket: 'googledrive'
+
+The following objects are masked from 'package:googlesheets4':
+
+    request_generate, request_make
+
+Warnmeldung:
+Paket 'googledrive' wurde unter R Version 3.6.3 erstellt 
+[1] "Starting data retrieval for NYC..."
+Parsed with column specification:
+cols(
+  AGE_GROUP = col_character(),
+  CASE_RATE = col_double(),
+  HOSPITALIZED_RATE = col_double(),
+  DEATH_RATE = col_double(),
+  CASE_COUNT = col_double(),
+  HOSPITALIZED_COUNT = col_double(),
+  DEATH_COUNT = col_double()
+)
+Parsed with column specification:
+cols(
+  SEX_GROUP = col_character(),
+  CASE_RATE = col_double(),
+  HOSPITALIZED_RATE = col_double(),
+  DEATH_RATE = col_double(),
+  CASE_COUNT = col_double(),
+  HOSPITALIZED_COUNT = col_double(),
+  DEATH_COUNT = col_double()
+)
+Parsed with column specification:
+cols(
+  X1 = col_character(),
+  X2 = col_character()
+)
+Parsed with column specification:
+cols(
+  DATE = col_character(),
+  TOTAL_TESTS = col_double(),
+  POSITIVE_TESTS = col_double(),
+  PERCENT_POSITIVE = col_double(),
+  PERCENT_POSITIVE_3DAYS_AGG = col_double()
+)
+Parsed with column specification:
+cols(
+  modzcta = col_double(),
+  Positive = col_double(),
+  Total = col_double(),
+  modzcta_cum_perc_pos = col_double()
+)
+Writing to "NYC input template"
+Appending 19 row(s) to "database"
+Fehler in open.connection(path, "wb") : kann Verbindung nicht öffnen
+Ruft auf: eval ... write_delim -> stream_delim -> open -> open.connection
+Zusätzlich: Warnmeldung:
+In open.connection(path, "wb") :
+  kann Datei 'U:/Projects/COVerAGE-DB/Data/nyc/temp_nyc.csv' nicht öffnen: No such file or directory
+Ausführung angehalten
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.2.1     v purrr   0.3.3
+v tibble  2.1.3     v dplyr   0.8.3
+v tidyr   1.0.0     v stringr 1.4.0
+v readr   1.3.1     v forcats 0.4.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+Warnmeldung:
+Paket 'tidyverse' wurde unter R Version 3.6.3 erstellt 
+
+Attache Paket: 'lubridate'
+
+The following object is masked from 'package:base':
+
+    date
+
+Warnmeldung:
+Paket 'googlesheets4' wurde unter R Version 3.6.3 erstellt 
+
+Attache Paket: 'googledrive'
+
+The following objects are masked from 'package:googlesheets4':
+
+    request_generate, request_make
+
+Warnmeldung:
+Paket 'googledrive' wurde unter R Version 3.6.3 erstellt 
+[1] "Starting data retrieval for NYC..."
+Parsed with column specification:
+cols(
+  AGE_GROUP = col_character(),
+  CASE_RATE = col_double(),
+  HOSPITALIZED_RATE = col_double(),
+  DEATH_RATE = col_double(),
+  CASE_COUNT = col_double(),
+  HOSPITALIZED_COUNT = col_double(),
+  DEATH_COUNT = col_double()
+)
+Parsed with column specification:
+cols(
+  SEX_GROUP = col_character(),
+  CASE_RATE = col_double(),
+  HOSPITALIZED_RATE = col_double(),
+  DEATH_RATE = col_double(),
+  CASE_COUNT = col_double(),
+  HOSPITALIZED_COUNT = col_double(),
+  DEATH_COUNT = col_double()
+)
+Parsed with column specification:
+cols(
+  X1 = col_character(),
+  X2 = col_character()
+)
+Parsed with column specification:
+cols(
+  DATE = col_character(),
+  TOTAL_TESTS = col_double(),
+  POSITIVE_TESTS = col_double(),
+  PERCENT_POSITIVE = col_double(),
+  PERCENT_POSITIVE_3DAYS_AGG = col_double()
+)
+Parsed with column specification:
+cols(
+  modzcta = col_double(),
+  Positive = col_double(),
+  Total = col_double(),
+  modzcta_cum_perc_pos = col_double()
+)
+Writing to "NYC input template"
+Appending 19 row(s) to "database"
+Local file:
+  * U:/Projects/COVerAGE-DB/Data/nyc/temp_nyc.csv
+uploaded into Drive file:
+  * USA_NYC29.06.2020_cases&deaths_age.csv: 18S2QsF2CWhBMd2FU1tpFKo4GRzpjLChC
+with MIME type:
+  * text/csv
+Local file:
+  * U:/Projects/COVerAGE-DB/Data/nyc/temp_nyc.csv
+uploaded into Drive file:
+  * USA_NYC29.06.2020_cases&deaths_sex.csv: 1BxZjmX2i3k7L0AlBSuw--j9oi7nP5hOy
+with MIME type:
+  * text/csv
+Local file:
+  * U:/Projects/COVerAGE-DB/Data/nyc/temp_nyc.csv
+uploaded into Drive file:
+  * USA_NYC29.06.2020_cases&deaths_summary.csv: 1M0IYasOb6rkCLAH_sRzy15L8McA6oguo
+with MIME type:
+  * text/csv
+Local file:
+  * U:/Projects/COVerAGE-DB/Data/nyc/temp_nyc.csv
+uploaded into Drive file:
+  * USA_NYC29.06.2020_tests.csv: 1iQdf0rwTsoheZU2ZA9DEMB2MylZ1gCRa
+with MIME type:
+  * text/csv
+Local file:
+  * U:/Projects/COVerAGE-DB/Data/nyc/temp_nyc.csv
+uploaded into Drive file:
+  * USA_NYC29.06.2020_tested.csv: 1joFM_F11pNiQoeFsDIn86wyJJhvNBovD
+with MIME type:
+  * text/csv
+[1] "nyc data saved! 2020-06-30"

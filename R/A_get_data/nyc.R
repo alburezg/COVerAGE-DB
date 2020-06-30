@@ -7,7 +7,7 @@ gs4_auth(email = "gatemonte@gmail.com")
 
 
 country <- "nyc"
-path_out <- paste0("../../Data/",country,"/")
+path_out <- paste0("U:/Projects/COVerAGE-DB/Data/",country,"/")
 
 db_age <- read_csv("https://github.com/nychealth/coronavirus-data/raw/master/by-age.csv")
 db_sex <- read_csv("https://github.com/nychealth/coronavirus-data/raw/master/by-sex.csv")

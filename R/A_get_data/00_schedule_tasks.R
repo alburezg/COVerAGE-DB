@@ -30,3 +30,9 @@ taskscheduler_create(
   , starttime = "15:00"
   , startdate = "03/07/2020"
 )
+
+# Delete tasks ------------
+
+# taskscheduler_delete("sweden_daily")
+# taskscheduler_delete("nyc_daily")
+# taskscheduler_delete("estonia_weekly")

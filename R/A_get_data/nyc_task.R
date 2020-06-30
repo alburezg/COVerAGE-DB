@@ -5,6 +5,9 @@ library(googledrive)
 library(readxl)
 library(httr)
 
-sink("nyc_output.txt", append = T)
-eval(parse("nyc.R", encoding = 'UTF-8'))
-sink()
+# path <- getwd()
+path <- "U:/Projects/COVerAGE-DB/R/A_get_data"
+
+# sink("nyc_output.txt", append = T)
+eval(parse(paste0(path, "/nyc.R"), encoding = 'UTF-8'))
+# sink()
