@@ -118,17 +118,19 @@ if(!nrow(matched)){
     bind_rows(current, db_all) %>% 
     filter(Date == date)
 } else {
-  dup <- unique(matched$Code)
-  print(paste0("Duplicated found for ", dup))
-  print("Overwriting data...")
-  
-  new <- 
-    db_all %>% 
-    rename(new = Value) %>% 
-    right_join( current %>% rename(old = Value)) %>% 
-    mutate(Value = coalesce(old, new)) %>% 
-    select(-old, -new) %>% 
-    filter(Date == date)
+
+  stop("Duplicates found - fix manually!")  
+  # dup <- unique(matched$Code)
+  # print(paste0("Duplicated found for ", dup))
+  # print("Overwriting data...")
+  # 
+  # new <- 
+  #   db_all %>% 
+  #   rename(new = Value) %>% 
+  #   right_join( current %>% rename(old = Value)) %>% 
+  #   mutate(Value = coalesce(old, new)) %>% 
+  #   select(-old, -new) %>% 
+  #   filter(Date == date)
 }
 
 # Now, since this is to be done on a daily basis, append only the rows that

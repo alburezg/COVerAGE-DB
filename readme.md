@@ -2,9 +2,7 @@ Script to automate data collecation for COVerAGE-DB
 
 # To do
 
-- Get totals by sex retrospectively for Sweden
-- Fix age intervals
-- Duplicated entry: June 11
+- Get TOT by sex retrospectively for Sweden (before June I think they don't exist)
 
 Run script R\A_get_data\00_retrieve_data.R from Hydra ad infinitum. 
 It tries to update the files every 12 hours and it the conditions are not right, it goes to sleep and reactivates in anoter 12 hours.
