@@ -1,0 +1,19 @@
+There are duplicates detected for US_NYC21.06.2020, so that entire code is removed, FYI. 
+If I understood right, NYC is running on automatic now. I had left a comment to this effect, but I think no one gets the memo now. Probably one of you maintains that script/series now, can you peek at the sheet:
+https://docs.google.com/spreadsheets/d/1p1BH48_J3sjyT1zvss9H9YqBQZq3q-7c3FEXbA2qeIk/edit#gid=0
+(cells highlighted rows 1770+)
+
+
+## Data sources
+
+https://github.com/nychealth/coronavirus-data/raw/master/by-age.csv
+https://github.com/nychealth/coronavirus-data/raw/master/by-sex.csv
+https://github.com/nychealth/coronavirus-data/raw/master/summary.csv
+https://github.com/nychealth/coronavirus-data/raw/master/tests.csv
+https://github.com/nychealth/coronavirus-data/raw/master/tests-by-zcta.csv
+
+db_age <- read_csv("https://github.com/nychealth/coronavirus-data/raw/master/by-age.csv")
+db_sex <- read_csv("https://github.com/nychealth/coronavirus-data/raw/master/by-sex.csv")
+db_sum <- read_csv("https://github.com/nychealth/coronavirus-data/raw/master/summary.csv", col_names = F)
+db_tests <- read_csv("https://github.com/nychealth/coronavirus-data/raw/master/tests.csv")
+db_tested <- read_csv("https://github.com/nychealth/coronavirus-data/raw/master/tests-by-zcta.csv")
